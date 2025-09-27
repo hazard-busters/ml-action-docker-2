@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4 # uses the checkout action to checkout the code
+    
+      - name: List installed Python packages
+        run: |
+          pip list
 
       - name: Run the script
         run: |
